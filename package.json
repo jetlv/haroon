@@ -1,0 +1,22 @@
+{
+  "name": "haroon",
+  "version": "1.0.0",
+  "description": "Special Scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "cheerio": "^0.20.0",
+    "jsonfile": "^2.4.0",
+    "lodash": "^4.15.0",
+    "node-xlsx": "^0.7.1",
+    "querystring": "^0.2.0",
+    "request": "^2.78.0",
+    "request-promise": "^4.1.1",
+    "validator": "^6.1.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
