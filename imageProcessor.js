@@ -20,6 +20,26 @@ var savePic = function (link, name) {
 
         return new Promise(function (res, rej) {
             setTimeout(function () {
+                res('Image fetching');
+            }, 1);
+        });
+    });
+}
+
+var savePdf = function (link, name) {
+    var options = {
+        url: link,
+        method: 'GET',
+        encoding: null
+    }
+
+    return rp(options).then(function (body) {
+        /** here body is picture stream */
+
+        fs.writeFileSync(name, body);
+
+        return new Promise(function (res, rej) {
+            setTimeout(function () {
                 res(0);
             }, 1);
         });
@@ -27,5 +47,6 @@ var savePic = function (link, name) {
 }
 
 module.exports = {
-    savePic: savePic
+    savePic: savePic,
+    savePdf: savePdf
 }
